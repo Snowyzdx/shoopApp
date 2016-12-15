@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>悠悠果屋</title>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/shouye.css" />
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script>
+		$(function(){
+				/*轮播*/
+			var mySwiper=new Swiper('#swiper1',{
+				pagination:'.swiper-pagination',
+				paginationClickable:true,
+				autoplay:3000,
+				autoplayDisableOnInteraction:false,
+			})
+			var mySwiper2=new Swiper('#swiper2',{
+				pagination: '.swiper-pagination',
+        		slidesPerView: 3,
+        		paginationClickable: true,
+        		autoplay:2000,
+        		spaceBetween: 10
+			})
+		/*容器内部滚动*/
+		function setScroll(str){
+			var myScroll=new IScroll(str,{
+				scrollX: true,
+				freeScroll: true,
+				bounce:false
+			});
+		}
+		setScroll(".wrapper");
+		/*导航选项卡事件*/
+	})
+		</script>
+	</head>
+	<body>
+		<header>
+		<!--搜索-->
+		<div id="search">
+			<span class="left">太原市</span>
+			<div class="position"></div>
+			<div class="search">
+				<input value="水果" />
+				<button id="search-btn"></button>
+			</div>
+			<div class="right"></div>
+		</div>
+		<!--搜索 end-->
+		
+		<!--导航-->
+		<nav>
+			<ul>
+				<li class="list li-act">推荐</li>
+				<li class="list">生鲜</li>
+				<li class="list">果具</li>
+				<li class="list">零食</li>
+			</ul>
+		</nav>
+		<!--导航 end-->
+		</header>
+	<div class="wrapper"id="wrapper1">	
+		<ul>
+			<!--轮播-->
+			<li>
+				<div class="swiper-container" id="swiper1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="first">
+					<div class="lunbo">
+						<a>
+							<img src="img/banner01.jpg" width="100%" height="100%">
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide" id="second">
+					<div class="lunbo">
+						<a>
+							<img src="img/banner02.jpg" width="100%" height="100%">
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide" id="third">
+					<div class="lunbo">
+						<a>
+							<img src="img/banner03.jpg" width="100%" height="100%">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </li>
+	 <!--轮播end-->
+	 <!--nav2-->
+	 <li>
+	 	<div id="nav2">
+			<ul>
+				<li class="nav2-list">
+					<a href="#">
+						<span>新鲜水果</span>
+					</a>
+				</li>
+				<li class="nav2-list">
+					<a href="#">
+						<span>本周特惠</span>
+					</a>
+				</li>
+				<li class="nav2-list">
+					<a href="#">
+						<span>新品上市</span>
+					</a>
+				</li>
+				<li class="nav2-list">
+					<a href="#">
+						<span>充值</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	 </li>
+	 <!--nav2 end-->
+	 <!--团购轮播-->
+	 <li>
+	 	<div class="swiper-container" id="swiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-1.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>秒杀团</span>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-6.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>抽奖团</span>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-7.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>超级团</span>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-4.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>海淘团</span>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-5.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>热卖水果</span>
+            	</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="#">
+            		<img src="img/cate-6.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span>满减</span>
+            	</a>
+            </div>
+        </div>
+    </div>
+	 </li>
+	 <!--团购轮播end-->
+	 <!--抢购-->
+	 <li>
+	 	<div id="qiang">
+				<h3>
+					<sapn class="left"></sapn>
+					<span class="center">疯狂抢购</span>
+					<span class="right"></span>
+				</h3>
+				<h4 class="text">总&nbsp;/&nbsp;能&nbsp;•&nbsp;有&nbsp;/&nbsp;惊&nbsp;•&nbsp;喜</h4>
+				<div id="qaing-1">
+					<a>
+						<img src="img/qiang-1.png" width="100%" height="100%">
+					</a>
+				</div>
+			</div>
+	 </li>
+	 <!--抢购end-->
+	 <!--时令水果-->
+	 <li>
+	 	<div id="goodShows" class="goods">
+	 		<h3>
+				<sapn class="left"></sapn>
+				<span class="center">时令水果</span>
+				<span class="right"></span>
+			</h3>
+			<h4 class="text">全&nbsp;/&nbsp;球&nbsp;•&nbsp;鲜&nbsp;/&nbsp;果&nbsp;•&nbsp;汇</h4>
+	 	<ul>
+				<li class="row">
+					<ul class="list">
+						<li>
+							<a>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+							</a>
+						</li>
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list2.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥22.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="row">
+					<ul class="list">
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list3.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥32.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list4.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="row">
+					<ul class="list">
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list5.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list6.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="row">
+					<ul class="list">
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list7.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+						<li>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+	 </li>
+  	<!--时令水果end-->
+  	<li>
+  		<div class="goods" id="goodShows2">
+  			<h3>
+				<sapn class="left"></sapn>
+				<span class="center">热销果汁</span>
+				<span class="right"></span>
+			</h3>
+			<h4 class="text">全&nbsp;/&nbsp;球&nbsp;•&nbsp;鲜&nbsp;/&nbsp;果&nbsp;•&nbsp;汇</h4>
+  			<ul>
+  					<li class="row">
+					<ul class="list">
+						<li>
+							<a>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a>
+							<div class="goodsImg">
+								<img src="img/goodsImg/s-list2.jpg" width="70%" height="80%">
+							</div>
+							<div class="goodsState">
+								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
+								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
+								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
+							</div>
+							</a>
+						</li>
+					</ul>
+				</li>
+  			</ul>
+  		</div>
+  	</li>
+	</ul>
+ </div> 
+	<!--footer-->
+		<footer>
+			<ul>
+				<li class="footer-list-1">
+					<a href="#">
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="footer-list-2">
+					<a href="#"> 
+						<span>分类</span>
+					</a>
+				</li>
+				<li class="footer-list-3">
+					<a href="#">
+						<span>购物</span>
+					</a>
+				</li>
+				<li class="footer-list-4">
+					<a href="#">
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+	</body>
+</html>

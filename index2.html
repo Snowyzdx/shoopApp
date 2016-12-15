@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/zepto.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/iscroll.js"></script>
+		<script>
+			$(function(){
+				function setScroll(str){
+				var myScroll=new IScroll(str,{
+				scrollX: true, freeScroll: true 	
+			});
+		}
+		setScroll(".wrapper");
+				
+			})
+		</script>
+		<style>
+			body,ul,li{
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+				position: relative;
+			}
+			li{
+				width: 100%;
+				height: 1rem;
+			}
+			.wrapper{
+				position: absolute;
+				top: 2rem;
+				bottom:2rem;
+			
+			}
+			header{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height:2rem;
+				width: 100%;
+				background: red;
+				overflow: hidden;
+			}
+			footer{
+				position: absolute;
+				top:11.34rem;
+				left: 0;
+				width: 100%;
+				height: 2rem;
+				background: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<div class="wrapper">
+			<div>
+				<h1>h1</h1>
+				<h2>hjkkj</h2>
+				<h3>hjkkj</h3>
+				<h4>hjkkj</h4>
+				<h5>hjkkj</h5>
+				<h6>hjkkj</h6>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+				<div style="width:100%;height:1.2rem;background:yellow">
+					
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
