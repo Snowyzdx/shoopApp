@@ -12,115 +12,21 @@ height: 100%;
 	position: relative;
 	margin: 0 auto;
 }
+
+.swiper-pagination-bullets{
+	position: absolute;
+	bottom: 2rem;
+}
 .swiper-pagination-bullet{
     background: #0EB19E;
 }
 #first{
-	background-image: url(../img/shanping/first.png);
-	background-size: contain;
-}
-#first .cir{
-	width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-	border: 0.2rem solid #fff;
-	background: #FEE9A6;
-	margin: 0 auto;
-	margin-top: 1rem;
-}
-#first .hand{
-	position: absolute;
-	left:2.2rem;
-	top: 1.2rem;
-	width: 2.6rem;
-	height: 5.5rem;
-	background-image: url(../img/shanping/first1.png);
+	background-image: url(../img/shanping1.png);
 	background-size: cover;
 }
-.first-1{
-	position: absolute;
-	width: 1.2rem;
-	height: 0.9rem;
-	top:0.8rem;
-	left: 1.2rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-1.png);
-}
-.first-2{
-	position: absolute;
-	width: 1.44rem;
-	height: 0.84rem;
-	top:2rem;
-	left: 0.6rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-2.png);
-}
-.first-3{
-	position: absolute;
-	width: 1.68rem;
-	height: 0.81rem;
-	top:3.5rem;
-	left: 0.5rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-3.png);
-}
-.first-4{
-	position: absolute;
-	width: 1.05rem;
-	height:1.05rem;
-	top:4.5rem;
-	left: 1rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-4.png);
-}
-.first-5{
-	position: absolute;
-	width: 1.05rem;
-	height:1.05rem;
-	top:1.5rem;
-	right: 1.5rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-5.png);
-}
-.first-6{
-	position: absolute;
-	width: 1.56rem;
-	height:0.84rem;
-	top:3rem;
-	right: 0.5rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-6.png);
-}
-.first-7{
-	position: absolute;
-	width: 1.2rem;
-	height:1.05rem;
-	top:4rem;
-	right:1.2rem;
-	background-size:cover;
-	background-image: url(../img/shanping/first-7.png);
-}
-.shan1-text{
-	color: #fff;
-	position: absolute;
-	left: 0;
-	right:0;
-	margin: 0 auto;
-	top: 8rem;
-	text-align: center;
-	line-height: 0.6rem;
-}
-.shan1-text h3{
-	font-family: "arial rounded mt bold";
-	font-size: 0.5rem;
-	margin-bottom: 0.6rem;
-}
-.shan1-text h4{
-	font-family: "arial, helvetica, sans-serif";
-	font-size: 0.4rem;
-}
+
 #second{
-	background-image: url(../img/shanping/second.png);
+	background-image: url(../img/shanping2.png);
 	background-size: contain;
 }
 #second .cir{
@@ -132,41 +38,23 @@ height: 100%;
 	margin: 0 auto;
 	margin-top: 1rem;
 }
-#second .center{
-	position: absolute;
-	width: 5.18rem;
-	height: 3.53rem;
-	top: 1.5rem;
-	left: 1.15rem;
-	background-image: url(../img/shanping/second-1.png);
-	background-size: contain;
-}
 #third{
-	background-image: url(../img/shanping/third.png);
-	background-size: contain;
-}
-#third .center{
-	position: absolute;
-	top: 2rem;
-	left: 2rem;
-	width: 4.14rem;
-	height: 3.69rem;
-	background-image: url(../img/shanping/third-1.png);
+	background-image: url(../img/shanping3.png);
 	background-size: contain;
 }
 #forth{
-	background-image: url(../img/shanping/forth.png);
+	background-image: url(../img/shanping4.png);
 	background-size: contain;
 }
 #forth .btn{
 	position: absolute;
-	top: 10rem;
+	top: 10.8rem;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 3rem;
-	height: 0.8rem;
-	background: #fff;
+	width: 3.6rem;
+	height: 1rem;
+	
 	border-radius: 0.1rem;
 }
 #forth .btn a{
@@ -176,7 +64,47 @@ height: 100%;
 	font-size: 0.4rem;
 	text-align: center;
 	line-height: 0.8rem;
-	color: #ACCC5F;
+	color: #FF1F8D;
 }
-
- 
+#center1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 3rem;
+	width:5.4rem;
+	height: 4.2rem;
+	z-index: 10;
+	box-shadow: 0px 0px 20px #aaa;
+}
+#cImg2{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 20%;
+	height: 20%;
+	display: none;
+} 
+#cImg3{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 6rem;
+	width:1.08rem;
+	height:1.24rem;
+	z-index: 9;
+	box-shadow: 0px 0px 20px #aaa;
+	/*display: none;*/
+}
+#cImg4{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 6rem;
+	width:0.864rem;
+	height:1.336rem;
+	z-index: 8;
+	box-shadow: 0px 0px 20px #aaa;
+}

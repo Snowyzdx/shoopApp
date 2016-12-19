@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<title>悠悠果屋</title>
+		<title>悠悠街</title>
 		<script type="text/javascript" src="js/zepto.js"></script>
 		<script type="text/javascript" src="js/base.js"></script>
 		<script type="text/javascript" src="js/iscroll.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/touch.min.js"></script>
+		<script type="text/javascript" src="js/shouye.js"></script>
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/shouye.css" />
 		<link rel="stylesheet" href="css/swiper.min.css">
@@ -26,7 +28,32 @@
         		paginationClickable: true,
         		autoplay:2000,
         		spaceBetween: 10
-			})
+			});
+			var mySwiper3=new Swiper('#swiper3',{
+				pagination: '.swiper-pagination',
+//      		slidesPerView: 3,
+        		paginationClickable: true,
+//      		autoplay:2000,
+//    		spaceBetween: 10
+			});
+			var mySwiper4=new Swiper('#swiper4',{
+				pagination: '.swiper-pagination',
+				slidesPerView: 5,
+				bounce:false,
+        		paginationClickable: true,
+			});
+			var mySwiper5=new Swiper('#swiper5',{
+				pagination: '.swiper-pagination',
+				slidesPerView: 5,
+				bounce:false,
+        		paginationClickable: true,
+			});
+			var mySwiper6=new Swiper('#swiper6',{
+				pagination: '.swiper-pagination',
+				slidesPerView: 5,
+				bounce:false,
+        		paginationClickable: true,
+			});
 		/*容器内部滚动*/
 		function setScroll(str){
 			var myScroll=new IScroll(str,{
@@ -36,334 +63,577 @@
 			});
 		}
 		setScroll(".wrapper");
-		/*导航选项卡事件*/
+		
 	})
 		</script>
 	</head>
 	<body>
-		<header>
+	<header>
 		<!--搜索-->
-		<div id="search">
-			<span class="left">太原市</span>
-			<div class="position"></div>
-			<div class="search">
-				<input value="水果" />
-				<button id="search-btn"></button>
-			</div>
-			<div class="right"></div>
-		</div>
-		<!--搜索 end-->
 		
-		<!--导航-->
-		<nav>
-			<ul>
-				<li class="list li-act">推荐</li>
-				<li class="list">生鲜</li>
-				<li class="list">果具</li>
-				<li class="list">零食</li>
-			</ul>
-		</nav>
-		<!--导航 end-->
-		</header>
-	<div class="wrapper"id="wrapper1">	
-		<ul>
-			<!--轮播-->
-			<li>
-				<div class="swiper-container" id="swiper1">
+		<div id="search">
+			<i class="icon iconfont left">&#xe625;</i>
+			<div class="search">
+				<input value="显瘦百搭韩版毛衣" />
+			</div>
+			<i class="icon iconfont right">&#xe631</i>
+		</div>
+		<i class="icon iconfont" id="message">&#xe601</i>
+		<!--搜索 end-->
+	</header>
+<div class="wrapper" id="wrapper1">	
+<ul id="wrapCon1">
+	<!--轮播开始-->
+	<li>
+		<div class="swiper-container" id="swiper1">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" id="first">
 					<div class="lunbo">
 						<a>
-							<img src="img/banner01.jpg" width="100%" height="100%">
+							<img src="img/lunbo1.png" width="100%" height="100%">
 						</a>
 					</div>
 				</div>
 				<div class="swiper-slide" id="second">
 					<div class="lunbo">
 						<a>
-							<img src="img/banner02.jpg" width="100%" height="100%">
+							<img src="img/lunbo2.png" width="100%" height="100%">
 						</a>
 					</div>
 				</div>
 				<div class="swiper-slide" id="third">
 					<div class="lunbo">
 						<a>
-							<img src="img/banner03.jpg" width="100%" height="100%">
+							<img src="img/lunbo3.png" width="100%" height="100%">
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide" id="forth">
+					<div class="lunbo">
+						<a>
+							<img src="img/lunbo4.png" width="100%" height="100%">
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide" id="fifth">
+					<div class="lunbo">
+						<a>
+							<img src="img/lunbo5.png" width="100%" height="100%">
 						</a>
 					</div>
 				</div>
 			</div>
+			<div class="swiper-pagination">
+    	    </div>
 		</div>
-	 </li>
-	 <!--轮播end-->
-	 <!--nav2-->
-	 <li>
+	</li>
+	 <!--轮播结束-->
+	 <!--导航开始-->
+	<li>
 	 	<div id="nav2">
 			<ul>
 				<li class="nav2-list">
 					<a href="#">
-						<span>新鲜水果</span>
+						<span>红人集</span>
 					</a>
 				</li>
 				<li class="nav2-list">
 					<a href="#">
-						<span>本周特惠</span>
+						<span>直播</span>
 					</a>
 				</li>
 				<li class="nav2-list">
 					<a href="#">
-						<span>新品上市</span>
+						<span>社区</span>
 					</a>
 				</li>
 				<li class="nav2-list">
 					<a href="#">
-						<span>充值</span>
+						<span>签到</span>
 					</a>
 				</li>
 			</ul>
 		</div>
-	 </li>
-	 <!--nav2 end-->
-	 <!--团购轮播-->
-	 <li>
+	</li>
+	<!--导航结束-->
+	<!--预告开始-->
+	<li class="yugao">
+	 	<a href="showNews.html">
+	 		<img src="img/yugao.png"width="100%" height="100%">
+	 	</a>
+	</li>
+	<!--预告结束-->
+	<!--穿搭课堂-->
+	<li>
+		<h3 class="hTile">
+			<sapn class="left"></sapn>
+			<span class="center">穿搭课堂</span>
+			<span class="right"></span>
+			<div class="text">总&nbsp;/&nbsp;能&nbsp;•&nbsp;有&nbsp;/&nbsp;惊&nbsp;•&nbsp;喜</h4>
+		</h3>
+		
 	 	<div class="swiper-container" id="swiper2">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-1.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>秒杀团</span>
+            		<img src="img/chuanDa1.jpg" alt="图片找不到" width="100%" height="100%">
+            		<span class="til">加毛外套</span>
             	</a>
             </div>
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-6.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>抽奖团</span>
+            		<img src="img/chuanDa2.png" alt="图片找不到" width="100%" height="100%">
+            		<span class="til">针织外搭</span>
             	</a>
             </div>
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-7.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>超级团</span>
+            		<img src="img/chuanDa3.png" alt="图片找不到" width="100%" height="100%">
+            		<span class="til">暖心高领</span>
             	</a>
             </div>
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-4.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>海淘团</span>
+            		<img src="img/chuanDa4.png" alt="图片找不到" width="100%" height="100%">
+            		<span class="til">长款棉服</span>
             	</a>
             </div>
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-5.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>热卖水果</span>
+            		<img src="img/chuanDa5.png" alt="图片找不到" width="100%" height="100%">
+            		<span class="til">毛呢外套</span>
             	</a>
             </div>
             <div class="swiper-slide">
             	<a href="#">
-            		<img src="img/cate-6.jpg" alt="图片找不到" width="100%" height="100%">
-            		<span>满减</span>
+            		<img src="img/chuanDa1.png" alt="图片找不到" width="100%" height="100%">
             	</a>
+            	</div>
+        	</div>
+    	</div>
+	</li>
+	<!--穿搭课堂结束-->
+  	<li id="liux">
+  		<h3 class="hTile hTile2">
+			<sapn class="left"></sapn>
+			<span class="center">流行元素</span>
+			<span class="right"></span>
+			<div class="text">总&nbsp;•&nbsp;能&nbsp;•&nbsp;跟&nbsp;•&nbsp;潮&nbsp;•&nbsp;流</h4>
+		</h3>
+  		<div class="swiper-container" id="swiper3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<ul>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux01.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">绝杀熬夜肌</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img"><img src="img/liux02.png" width="100%" height="100%"></div>
+            				<span class="liux-text">御寒靠毛领</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux03.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">高领爱上毛绒</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux04.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">休闲大衣</span>
+            			</a>
+            		</li>
+            
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux05.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">爆款羽绒服</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux06.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">热卖棉服</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux07.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">省心裙子</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux08.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">加绒打底裤</span>
+            			</a></li>
+            	</ul>
+            </div>
+            <div class="swiper-slide">
+            	<ul>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux01.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">绝杀熬夜肌</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img"><img src="img/liux02.png" width="100%" height="100%"></div>
+            				<span class="liux-text">御寒靠毛领</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux03.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">高领爱上毛绒</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux04.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">休闲大衣</span>
+            			</a>
+            		</li>
+            
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux05.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">爆款羽绒服</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux06.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">热卖棉服</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux07.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">省心裙子</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux08.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">加绒打底裤</span>
+            			</a></li>
+            	</ul>
+            </div>
+            <div class="swiper-slide">
+            	<ul>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux01.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">绝杀熬夜肌</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img"><img src="img/liux02.png" width="100%" height="100%"></div>
+            				<span class="liux-text">御寒靠毛领</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux03.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">高领爱上毛绒</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux04.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">休闲大衣</span>
+            			</a>
+            		</li>
+            
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux05.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">爆款羽绒服</span>
+            			</a>
+            		</li>
+            		<li>
+            			<a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux06.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">热卖棉服</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux07.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">省心裙子</span>
+            			</a></li>
+            		<li><a href="list01.html">
+            				<div class="liux-img">
+            					<img src="img/liux08.png" width="100%" height="100%">
+            				</div>
+            				<span class="liux-text">加绒打底裤</span>
+            			</a></li>
+            	</ul>
             </div>
         </div>
-    </div>
-	 </li>
-	 <!--团购轮播end-->
-	 <!--抢购-->
-	 <li>
-	 	<div id="qiang">
-				<h3>
-					<sapn class="left"></sapn>
-					<span class="center">疯狂抢购</span>
-					<span class="right"></span>
-				</h3>
-				<h4 class="text">总&nbsp;/&nbsp;能&nbsp;•&nbsp;有&nbsp;/&nbsp;惊&nbsp;•&nbsp;喜</h4>
-				<div id="qaing-1">
-					<a>
-						<img src="img/qiang-1.png" width="100%" height="100%">
+  		<!--流行元素end-->
+  	</li>
+  	<!--精选专题-->
+  	<li id="zhuanti">
+  		<h3 class="hTile3">
+  			<span></span>
+  			<span>专&nbsp;题&nbsp;精&nbsp;选</span>
+  			<span></span>
+  		</h3>
+  		<ul>
+  			<li>
+  			<div class="ztBanner"> 
+  				 <a href="list01.html" class="banner">
+  				 	<img src="img/ztBanner01.png" width="100%" height="100%">
+  				 </a>
+  				 <span class="sanj"></span>
+  				 <a class="shooper">
+  				 </a>
+  				 <span>_5ANN</span>
+  			</div>
+  		<div class="swiper-container" id="swiper4">
+			<ul class="swiper-wrapper ztLists">
+				<li class="swiper-slide">
+  					<a href="#"><img src="img/ztList1-01.png" width="100%" height="100%"></a>
+  					<span class="ztList-price">￥39.9</span>
+  				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-02.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥99.06</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-03.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥39.90</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-04.png" width="100%" height="100%"></a>
+					<span class="ztList-price">￥56.99</span>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-05.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥49.00</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-06.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥68.99</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-07.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥38.71</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-08.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥129.22</sapn>
+				</li>
+				<li class="swiper-slide ztList">
+					<a href="#">
+						<span></span>
+						<span></span>
 					</a>
-				</div>
-			</div>
-	 </li>
-	 <!--抢购end-->
-	 <!--时令水果-->
-	 <li>
-	 	<div id="goodShows" class="goods">
-	 		<h3>
-				<sapn class="left"></sapn>
-				<span class="center">时令水果</span>
-				<span class="right"></span>
-			</h3>
-			<h4 class="text">全&nbsp;/&nbsp;球&nbsp;•&nbsp;鲜&nbsp;/&nbsp;果&nbsp;•&nbsp;汇</h4>
-	 	<ul>
-				<li class="row">
-					<ul class="list">
-						<li>
-							<a>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-							</a>
-						</li>
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list2.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥22.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-					</ul>
 				</li>
-				<li class="row">
-					<ul class="list">
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list3.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥32.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list4.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-					</ul>
+				<li class="swiper-slide">
 				</li>
-				<li class="row">
-					<ul class="list">
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list5.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list6.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-					</ul>
+				<li class="swiper-slide">
+					
 				</li>
-				<li class="row">
-					<ul class="list">
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list7.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>	
-	 </li>
-  	<!--时令水果end-->
-  	<li>
-  		<div class="goods" id="goodShows2">
-  			<h3>
-				<sapn class="left"></sapn>
-				<span class="center">热销果汁</span>
-				<span class="right"></span>
-			</h3>
-			<h4 class="text">全&nbsp;/&nbsp;球&nbsp;•&nbsp;鲜&nbsp;/&nbsp;果&nbsp;•&nbsp;汇</h4>
-  			<ul>
-  					<li class="row">
-					<ul class="list">
-						<li>
-							<a>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list8.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-							</a>
-						</li>
-						<li>
-							<a>
-							<div class="goodsImg">
-								<img src="img/goodsImg/s-list2.jpg" width="70%" height="80%">
-							</div>
-							<div class="goodsState">
-								<p class="state">国产金果逆袭|浦江金艳猕猴桃|15枚装，下单立即优惠多多</p>
-								<div class="price"><span class="newPrice">￥13.9</span><span class="oldPrice">￥49.9</span></div>
-								<div class="kaituan"><span>2人团</span><span>去开团</span></div>
-							</div>
-							</a>
-						</li>
-					</ul>
-				</li>
-  			</ul>
+  				</ul>
   		</div>
   	</li>
-	</ul>
- </div> 
-	<!--footer-->
+  			<li>
+  			<div class="ztBanner"> 
+  				 <a href="list01.html" class="banner">
+  				 	<img src="img/ztBanner02.png" width="100%" height="100%">
+  				 </a>
+  				 <span class="sanj"></span>
+  				 <a class="shooper">
+  				 </a>
+  				 <span>_5ANN</span>
+  			</div>
+  		<div class="swiper-container" id="swiper5">
+			<ul class="swiper-wrapper ztLists">
+				<li class="swiper-slide">
+  					<a href="#"><img src="img/ztList1-01.png" width="100%" height="100%"></a>
+  					<span class="ztList-price">￥39.9</span>
+  				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-02.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥99.06</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-03.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥39.90</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-04.png" width="100%" height="100%"></a>
+					<span class="ztList-price">￥56.99</span>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-05.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥49.00</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-06.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥68.99</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-07.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥38.71</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-08.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥129.22</sapn>
+				</li>
+				<li class="swiper-slide ztList">
+					<a href="#">
+						<span></span>
+						<span></span>
+					</a>
+				</li>
+				<li class="swiper-slide">
+				</li>
+				<li class="swiper-slide">
+					
+				</li>
+  				</ul>
+  		</div>
+  	</li>
+  		<li>
+  			<div class="ztBanner"> 
+  				 <a href="list01.html" class="banner">
+  				 	<img src="img/ztBanner03.png" width="100%" height="100%">
+  				 </a>
+  				 <span class="sanj"></span>
+  				 <a class="shooper">
+  				 </a>
+  				 <span>_5ANN</span>
+  			</div>
+  		<div class="swiper-container" id="swiper6">
+			<ul class="swiper-wrapper ztLists">
+				<li class="swiper-slide">
+  					<a href="#"><img src="img/ztList1-01.png" width="100%" height="100%"></a>
+  					<span class="ztList-price">￥39.9</span>
+  				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-02.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥99.06</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-03.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥39.90</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-04.png" width="100%" height="100%"></a>
+					<span class="ztList-price">￥56.99</span>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-05.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥49.00</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-06.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥68.99</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-07.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥38.71</sapn>
+				</li>
+				<li class="swiper-slide">
+					<a href="#"><img src="img/ztList1-08.png" width="100%" height="100%"></a>
+					<sapn class="ztList-price">￥129.22</sapn>
+				</li>
+				<li class="swiper-slide ztList">
+					<a href="#">
+						<span></span>
+						<span></span>
+					</a>
+				</li>
+				<li class="swiper-slide">
+				</li>
+				<li class="swiper-slide">
+					
+				</li>
+  				</ul>
+  		</div>
+  	</li>
+  			<li></li>
+  		</ul>
+  	</li>
+  	<!--精选专题 end-->
+  	</ul>
+</div>
+<!--footer-->
 		<footer>
 			<ul>
-				<li class="footer-list-1">
+				<li class="list">
 					<a href="#">
+						<i class="icon iconfont">&#xe604;</i>
 						<span>首页</span>
 					</a>
 				</li>
-				<li class="footer-list-2">
-					<a href="#"> 
-						<span>分类</span>
+				<li class="list">
+					<a href="#">
+						<i class="icon iconfont">&#xe632;</i>
+						<span>买买买</span>
 					</a>
 				</li>
-				<li class="footer-list-3">
-					<a href="#">
-						<span>购物</span>
+				<li class="list">
+					<a href="list01.html">
+						<i class="icon iconfont">&#xe631;</i>
+						<span>关注</span>
+					</a>	
+				</li>
+				<li class="list">
+					<a>
+						<i class="icon iconfont">&#xe611;</i>
+						<span>购物车</span>
 					</a>
 				</li>
-				<li class="footer-list-4">
-					<a href="#">
+				<li class="list">
+					<a>
+						<i class="icon iconfont">&#xe67f;</i>
 						<span>我的</span>
 					</a>
 				</li>
 			</ul>
 		</footer>
-		<!--footer end-->
+<!--footer end-->
 	</body>
 </html>

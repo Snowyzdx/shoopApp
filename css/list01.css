@@ -1,0 +1,377 @@
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:1rem;
+	z-index: 10;
+	background: #D60024;
+}
+#wrapper1{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 1rem;
+	bottom: 1.1rem;
+	/*z-index: 5;*/
+	/*height: 20rem;*/
+}
+#wrapCon1{
+	width: 100%;
+	height: 40rem;
+}
+#fenlei{
+	position: absolute;
+	top: 0.15rem;
+	left: 0.2rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+	color: #fff;
+}
+/*搜索*/
+#search{
+	position: relative;
+	margin-top: 0.2rem;
+	margin-left: 1rem;
+	width: 70%;
+	height:60%;
+	background:#fff;
+	/*opacity: 0.6;*/
+	border-radius: 0.1rem;
+	color: #fff;
+}
+#search .left{
+	position: absolute;
+	width: 0.6rem;
+	height: 0.6rem;
+	left: 0.3rem;
+	top: 0rem;
+	text-align: center;
+	line-height: 0.6rem;
+	color: #666;
+}
+#search input{
+	position: absolute;
+	left: 1rem;
+	top: 0rem;
+	width: 4rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	outline: none;
+	border: 0;
+	background:#fff;
+	/*opacity: 0.6;*/
+	color: #666;
+}
+#search .right{
+	position: absolute;
+	top: 0rem;
+	right: 0.4rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+	color: #666;
+}
+#message{
+	position: absolute;
+	top: 0.15rem;
+	right: 0.2rem;
+	width: 0.6rem;
+	height: 0.6rem;
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+	color: #fff;
+}
+#list-1{
+	width: 100%;
+	height: 2.4rem;
+	padding: 0.2rem;
+}
+#list-1 a{
+	display: block;
+	float: left;
+	width: 2.2rem;
+	height: 2.6rem;
+	margin-right: 0.2rem;
+	border-radius: 0.1rem;
+}
+#list-1 a:nth-last-child{
+	margin-right: 0rem;
+}
+#list-2{
+	width: 100%;
+	height: 2rem;
+	margin-top: 0.1rem;
+	
+}
+#list-2 a{
+	display: block;
+	float: left;
+	width: 1.8rem;
+	height: 2rem;
+	text-align: center;
+	position: relative;
+}
+#list-2 a img{
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+}
+#list-2 a span{
+	position: absolute;
+	display: block;
+	top: 1.7rem;
+	width: 1.6rem;
+	height: 0.4rem;
+	font-size: 0.3rem;
+	text-align: center;
+}
+#list3{
+	margin-top: 0.5rem;
+	width: 100%;
+	border-top: 0.2rem solid #D8D5CC;
+	box-sizing: border-box;
+}
+.lists{
+	width: 100%;
+	background :#fff;
+}
+.lists li{
+	width: 100%;
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+}
+.lists li a{
+	display: block;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	line-height: 1rem;
+	border-bottom: 0.01rem solid #999;
+}
+.lists li span:nth-child(1){
+	position: absolute;
+	left: 0;
+	font-size: 0.3rem;
+	font-weight: 400;
+	color: #333;
+}
+.lists li span:nth-child(2){
+	position: absolute;
+	left: 1rem;
+	font-size: 0.2rem;
+	color: #666;
+}
+.lists li span:nth-child(3){
+	position: absolute;
+	right: 0;
+	top: 0.2rem;
+	display: block;
+	width: 2.4rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: #BFB9AA;
+	font-size: 0.3rem;
+	color: #333;
+	border-radius: 0.3rem;
+	opacity: 0.6;
+}
+.lists li span:nth-child(3) img{
+	position: absolute;
+	width: 0.6rem;
+	height: 0.6rem;
+	left: 0.1rem;
+}
+.lists li span:nth-child(3) span{
+	position: absolute;
+	right: 0.1rem;
+}
+#list4{
+	margin-top: 0.5rem;
+	width: 100%;
+	border-top: 0.2rem solid #D8D5CC;
+	box-sizing: border-box;
+}
+#list5{
+	margin-top: 0.5rem;
+	width: 100%;
+	height:3.2rem;
+	border-top: 0.2rem solid #D8D5CC;
+	box-sizing: border-box;
+}
+#list5 h3{
+	width: 7rem;
+	height: 1rem;
+	text-align: left;
+	line-height: 1rem;
+	box-sizing: border-box;
+}
+#list5 h3 span:nth-child(1){
+	display: block;
+	float: left;
+	margin-left: 0.2rem;
+	font-size: 0.4rem;
+	color: #333;
+	font-weight: 600;
+}
+#list5 h3 span:nth-child(2){
+	display: block;
+	float: left;
+	margin-left:0.1rem;
+	font-size: 0.2rem;
+	color: #999;
+}
+#list5 .swiper-slide a{
+	display: block;
+	width: 1.2rem;
+	height: 2.2rem;
+	position: relative;
+}
+#list5 .swiper-slide a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.2rem;
+	height:1.6rem;
+	overflow: hidden;
+}
+#list5 .swiper-slide a span{
+	position: absolute;
+	top: 1.6rem;
+	left: 0;
+	display: block;
+	width: 1.2rem;
+	height: 0.6rem;
+	font-size: 0.3rem;
+	color: #333;
+	line-height: 0.6rem;
+	text-align: center;
+}
+#list6{
+	margin-top: 0.5rem;
+	width: 100%;
+	height: 3.2rem;
+	border-top: 0.2rem solid #D8D5CC;
+	box-sizing: border-box;
+}
+#list6 h3{
+	width: 7rem;
+	height: 1rem;
+	text-align: left;
+	line-height: 1rem;
+	box-sizing: border-box;
+}
+#list6 h3 span:nth-child(1){
+	display: block;
+	float: left;
+	margin-left: 0.2rem;
+	font-size: 0.4rem;
+	color: #333;
+	font-weight: 600;
+}
+#list6 h3 span:nth-child(2){
+	display: block;
+	float: left;
+	margin-left:0.1rem;
+	font-size: 0.2rem;
+	color: #999;
+}
+#list6 .swiper-slide a{
+	display: block;
+	width: 1.2rem;
+	height: 2.2rem;
+	position: relative;
+}
+#list6 .swiper-slide a img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.2rem;
+	height:1.6rem;
+	overflow: hidden;
+}
+#list6 .swiper-slide a span{
+	position: absolute;
+	top: 1.6rem;
+	left: 0;
+	display: block;
+	width: 1.2rem;
+	height: 0.6rem;
+	font-size: 0.3rem;
+	color: #333;
+	line-height: 0.6rem;
+	text-align: center;
+}
+#list7{
+	margin-top: 0.5rem;
+	width: 100%;
+	border-top: 0.2rem solid #D8D5CC;
+	box-sizing: border-box;
+}
+#list7 h3{
+	width: 7rem;
+	height: 1rem;
+	text-align: left;
+	line-height: 1rem;
+	box-sizing: border-box;
+}
+#list7 h3 span:nth-child(1){
+	display: block;
+	float: left;
+	margin-left: 0.2rem;
+	font-size: 0.4rem;
+	color: #333;
+	font-weight: 600;
+}
+#list7 h3 span:nth-child(2){
+	display: block;
+	float: left;
+	margin-left:0.1rem;
+	font-size: 0.2rem;
+	color: #999;
+}
+#list7 h3 span:nth-child(3){
+	display: block;
+	float: right;
+	margin-left:0.1rem;
+	font-size: 0.4rem;
+	color: #999;
+}
+#list7 .banner{
+	width: 100%;
+	height: 2rem;
+}
+#list7 .list{
+	width: 100%;
+}
+#list7 .list li{
+	float: left;
+	width: 2.3rem;
+	height: 4rem;
+	margin-left: 0.2rem;
+	position: relative;
+}
+#list7 .list li a{
+	width: 2.3rem;
+	height: 2.8rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#list7 .list li span:nth-child(1){
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	top: 3.2rem;
+	left: 0;
+	width: 100%;
+	height: 0.6rem;
+	text-align:center;
+	line-height: 0.4rem;
+	font-size: 0.3rem;
+}
